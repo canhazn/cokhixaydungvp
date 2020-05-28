@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% load static %}
+{% block extrahead %}
+<link rel="stylesheet" href="{% static 'css/index.css' %}">
+{% endblock extrahead %}
+{% block content %}
+<script src="https://unpkg.com/magic-grid@3.1.2/dist/magic-grid.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.dotdotdot/4.0.11/dotdotdot.js"></script>
+<div class="container home d-flex flex-column">
+
+    <div class="greating flex-grow-1 d-flex flex-column justify-content-center align-items-center">
+        
+            <!-- <img src="{% static 'images/settings.gif' %}" alt=""> -->
+            <img class="" width="100" src="{% static 'images/icon.png' %}" alt="">
+            <p class="slogan">Phát triển bền vững theo thời gian</p>
+        
+    </div>
+
+    <div class="nav">
+        <div class="container">
+            <hr style="margin: 0;">
+
+            <div class="d-flex justify-content-around flex-md-row flex-column">
+                <div class="item d-flex align-items-center">
+                    <div class="icon">
+                        <i class="fas fa-2x fa-cogs"></i>
+                    </div>
+                    <div class="content flex-grow-3">
+                        <h2>Dịch vụ</h2>
+                        <p>Nhà sưởng, mái tôn...</p>
+                    </div>
+                </div>
+                <div class="item d-flex align-items-center">
+                    <div class="icon">
+                        <i class="fas fa-2x fa-shopping-cart"></i>
+                    </div>
+                    <div class="content flex-grow-3">
+                        <h2>Sản phẩm</h2>
+                        <p>Nhà sưởng, mái tôn...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{%endblock%}

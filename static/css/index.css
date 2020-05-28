@@ -1,0 +1,33 @@
+.home {
+    height: calc(100vh - 120px);
+    min-height: 500px;
+}
+
+.slogan {
+    font-size: 22px;
+}
+
+.item {
+    width: 100%;
+    padding: 16px 16px 0 32px;
+    transition: ease-in;
+    transition-property: all;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    /* border: 1px solid black; */
+}
+
+.item:hover {
+    background-color: #2323;
+}
+
+.icon {
+    /* border: 1px solid black; */
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 8px 16px 0;
+}
