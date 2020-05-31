@@ -1,0 +1,54 @@
+.service {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    width: 350px;
+    cursor: pointer;
+}
+.service:hover {
+    border: 1px solid #9ea3a8;
+}
+.service:hover > h2 {
+    text-decoration: underline;
+}
+
+.service h2 {
+    font-size: 23px;
+}
+
+.thumbnail img {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+}
+
+/* Fake image */
+.leftcolumn {
+    width: 75%;
+}
+
+.rightcolumn {
+    width: 25%;    
+    padding-top: 20px;
+}
+
+.card {
+    padding: 15px;
+    margin-bottom: 30px;
+}
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 767.98px) {
+    .leftcolumn, .rightcolumn {
+        width: 100%
+    }
+
+    .rightcolumn {
+        margin: 30px 16px 16px 16px;
+    }
+}

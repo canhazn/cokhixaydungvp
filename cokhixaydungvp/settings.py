@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django_cleanup.apps.CleanupConfig',
     'django_summernote',
-    'service'
+    'service',
+    'product'
 ]
 
 MIDDLEWARE = [

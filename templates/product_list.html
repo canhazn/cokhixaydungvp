@@ -1,0 +1,138 @@
+{% extends "base.html" %}
+{% load static %}
+{% block extrahead %}
+<link rel="stylesheet" href="{% static 'css/product_list.css' %}">
+{% endblock extrahead %}
+{% block content %}
+<script src="https://unpkg.com/magic-grid@3.1.2/dist/magic-grid.min.js"></script>
+<br>
+<div class="container">
+    <div class="card h-100">       
+        <div class="card-body">
+          <h4 class="card-title">
+            <a href="#">Cung cấp sản phẩm uy tín, chất lượng cao. </a>
+          </h4>
+          <h5>Hotline: 0123456789</h5>          
+        </div>
+      </div>
+</div>
+<div class="container">
+<!-- 
+    <div class="row">
+        <div class="leftcolumn container-service">
+
+            {% for product in products %}
+            <div class="service card">
+                <h2>{{product.title}}</h2>                
+                <div class="thumbnail">
+                    <img class="" src="{{ service.thumbnail.url }}" alt="" srcset="">
+                </div>                
+            </div>
+            {% endfor %} 
+           
+    </div> -->
+
+    <div class="row">
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <a href="#"><img class="card-img-top" src="/static/images/settings.gif" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#">Bếp từ</a>
+              </h4>
+              <h5>1.000.000đ</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <a href="#"><img class="card-img-top" src="/static/images/settings.gif" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#">Điều hòa</a>
+              </h4>
+              <h5>2.000.000đ</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <a href="#"><img class="card-img-top" src="/static/images/settings.gif" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#">Tên sản phẩm</a>
+              </h4>
+              <h5>1.000</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <a href="#"><img class="card-img-top" src="/static/images/settings.gif" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#">Tên sản phẩm</a>
+              </h4>
+              <h5>1.000</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <a href="#"><img class="card-img-top" src="/static/images/settings.gif" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#">Tên sản phẩm</a>
+              </h4>
+              <h5>1.000</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <a href="#"><img class="card-img-top" src="/static/images/settings.gif" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#">Tên sản phẩm</a>
+              </h4>
+              <h5>1.000</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+</div>
+<script>
+    let magicGrid = new MagicGrid({
+        container: '.container-service',
+        animate: true,
+        gutter: 15,
+        static: true,
+        useMin: true
+    });
+
+    magicGrid.listen();
+</script>
+{% endblock content %}
+
+
+<!-- {% for service in services %}
+            <div class="service">
+                <h2>{{service.title}}</h2>                
+                <div class="thumbnail">
+                    <img class="" src="{{ service.thumbnail.url }}" alt="" srcset="">
+                </div>                
+            </div>
+            {% endfor %} -->

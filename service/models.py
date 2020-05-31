@@ -2,8 +2,8 @@ from django.db import models
 
 # Create your models here.
 
-def path_file_name(instance, filename):
-    return '/'.join(filter(None, ('services', instance.slug, filename)))
+def path_file_name(instance, filename):    
+    return '/'.join(filter(None, ('service', instance.slug, filename)))
 
 class Service(models.Model):
     title = models.CharField(max_length=200, null=True, blank=False)

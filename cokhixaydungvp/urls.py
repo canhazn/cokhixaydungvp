@@ -24,7 +24,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.homeView, name="home"),
     path('summernote/', include('django_summernote.urls')),
-    path('dich-vu/', include("service.urls"))
+    path('dich-vu/', include("service.urls")),
+    path('san-pham/', include("product.urls"))
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
