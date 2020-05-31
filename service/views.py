@@ -1,6 +1,7 @@
 from django.shortcuts import render
-
+from .models import Service
 # Create your views here.
 
-def homeView(request):
-    return render(request, 'index.html')
+def serviceList(request):
+    services = Service.objects.all()
+    return render(request, 'service_list.html', { 'services': services})

@@ -1,6 +1,7 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
 # Create your views here.
 
 def homeView(request):
-    return render(request, 'index.html')
+    # return render(request, 'index.html')
+    return redirect("service_list")

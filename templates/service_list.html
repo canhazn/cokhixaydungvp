@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+{% load static %}
+{% block extrahead %}
+<link rel="stylesheet" href="{% static 'css/service_list.css' %}">
+{% endblock extrahead %}
+{% block content %}
+<script src="https://unpkg.com/magic-grid@3.1.2/dist/magic-grid.min.js"></script>
+<div class="container">
+
+    <div class="row">
+        <div class="leftcolumn container-service">
+
+            {% for service in services %}
+            <div class="service card">
+                <h2>{{service.title}}</h2>                
+                <div class="thumbnail">
+                    <img class="" src="{{ service.thumbnail.url }}" alt="" srcset="">
+                </div>                
+            </div>
+            {% endfor %} 
+            <div class="service card">
+                <h2>TITLE HEADING</h2>                
+                <div class="thumbnail">
+                    <img src="/static/images/settings.gif" alt="" srcset="">
+                </div>                
+            </div>
+            <div class="service card">
+                <h2>TITLE HEADING</h2>                
+                <div class="thumbnail">
+                    <img src="/static/images/settings.gif" alt="" srcset="">
+                </div>                
+            </div>
+            <div class="service card">
+                <h2>TITLE HEADING</h2>                
+                <div class="thumbnail">
+                    <img src="/static/images/settings.gif" alt="" srcset="">
+                </div>                
+            </div>
+            <div class="service card">
+                <h2>TITLE HEADING</h2>                
+                <div class="thumbnail">
+                    <img src="/static/images/settings.gif" alt="" srcset="">
+                </div>                
+            </div>
+            <div class="service card">
+                <h2>TITLE HEADING</h2>                
+                <div class="thumbnail">
+                    <img src="/static/images/settings.gif" alt="" srcset="">
+                </div>                
+            </div>
+            <div class="service card">
+                <h2>TITLE HEADING</h2>                
+                <div class="thumbnail">
+                    <img src="/static/images/settings.gif" alt="" srcset="">
+                </div>                
+            </div>
+        </div>
+        <div class="rightcolumn">
+            <div class="card">
+                <h2>Về chúng tôi</h2>
+                <div class="fakeimg" style="height:100px;">Ảnh minh họa</div>
+                <p style="margin:0">Phát triển bền vững theo thời gian!</p>
+            </div>
+            <div class="card">
+                <h3>Công trình tiêu biểu</h3>
+                <div class="fakeimg">Ảnh minh họa</div><br>
+                <div class="fakeimg">Ảnh minh họa</div><br>
+                <div class="fakeimg">Ảnh minh họa</div>
+            </div>
+            <div class="card">
+                <h3>Liên hệ</h3>
+                <p>Phú Xuân Vĩnh Phúc</p>
+                <p>Hotline: 0963659872</p>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    let magicGrid = new MagicGrid({
+        container: '.container-service',
+        animate: true,
+        gutter: 15,
+        static: true,
+        useMin: true
+    });
+
+    magicGrid.listen();
+</script>
+{% endblock content %}
+
+
+<!-- {% for service in services %}
+            <div class="service">
+                <h2>{{service.title}}</h2>                
+                <div class="thumbnail">
+                    <img class="" src="{{ service.thumbnail.url }}" alt="" srcset="">
+                </div>                
+            </div>
+            {% endfor %} -->
