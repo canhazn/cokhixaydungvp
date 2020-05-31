@@ -1,8 +1,7 @@
 .service {
     background-color: white;
     padding: 20px;
-    margin-top: 20px;
-    width: 350px;
+    margin: 20px 15px;    
     cursor: pointer;
 }
 .service:hover {
@@ -49,6 +48,6 @@
     }
 
     .rightcolumn {
-        margin: 30px 16px 16px 16px;
+        margin: 0px 16px 16px 16px;
     }
 }

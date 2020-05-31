@@ -10,50 +10,41 @@
     <div class="row">
         <div class="leftcolumn container-service">
 
-            {% for service in services %}
-            <div class="service card">
-                <h2>{{service.title}}</h2>                
-                <div class="thumbnail">
-                    <img class="" src="{{ service.thumbnail.url }}" alt="" srcset="">
-                </div>                
+            <div class="row" style="margin:0">
+                {% for service in services %}
+                <div class="col-lg-5 col-md-6 mb-4 card service">
+                    <h2 href="#">{{service.title}}</h2>
+                    <div class="thumbnail">
+                        <img src="{{ service.thumbnail.url }}" alt="" srcset="">
+                    </div>  
+                </div>
+                {% endfor %}
+                <div class="col-lg-5 col-md-6 mb-4 card service">
+                    <h2 href="#">Tiêu đề</h2>
+                    <div class="thumbnail">
+                        <img src="/static/images/settings.gif" alt="" srcset="">
+                    </div>  
+                </div>
+                <div class="col-lg-5 col-md-6 mb-4 card service">
+                    <h2 href="#">Tiêu đề</h2>
+                    <div class="thumbnail">
+                        <img src="/static/images/settings.gif" alt="" srcset="">
+                    </div>  
+                </div>
+                <div class="col-lg-5 col-md-6 mb-4 card service">
+                    <h2 href="#">Tiêu đề</h2>
+                    <div class="thumbnail">
+                        <img src="/static/images/settings.gif" alt="" srcset="">
+                    </div>  
+                </div>
+                
             </div>
-            {% endfor %} 
-            <div class="service card">
+            <!-- <div class="service card">
                 <h2>Tiêu đề</h2>                
                 <div class="thumbnail">
                     <img src="/static/images/settings.gif" alt="" srcset="">
                 </div>                
-            </div>
-            <div class="service card">
-                <h2>Tiêu đề</h2>                
-                <div class="thumbnail">
-                    <img src="/static/images/settings.gif" alt="" srcset="">
-                </div>                
-            </div>
-            <div class="service card">
-                <h2>Tiêu đề</h2>                
-                <div class="thumbnail">
-                    <img src="/static/images/settings.gif" alt="" srcset="">
-                </div>                
-            </div>
-            <div class="service card">
-                <h2>Tiêu đề</h2>                
-                <div class="thumbnail">
-                    <img src="/static/images/settings.gif" alt="" srcset="">
-                </div>                
-            </div>
-            <div class="service card">
-                <h2>Tiêu đề</h2>                
-                <div class="thumbnail">
-                    <img src="/static/images/settings.gif" alt="" srcset="">
-                </div>                
-            </div>
-            <div class="service card">
-                <h2>Tiêu đề</h2>                
-                <div class="thumbnail">
-                    <img src="/static/images/settings.gif" alt="" srcset="">
-                </div>                
-            </div>
+            </div> -->
         </div>
         <div class="rightcolumn">
             <div class="card">
@@ -76,15 +67,15 @@
     </div>
 </div>
 <script>
-    let magicGrid = new MagicGrid({
-        container: '.container-service',
-        animate: true,
-        gutter: 15,
-        static: true,
-        useMin: true
-    });
+    // let magicGrid = new MagicGrid({
+    //     container: '.container-service',
+    //     animate: true,
+    //     gutter: 15,
+    //     static: true,
+    //     useMin: true
+    // });
 
-    magicGrid.listen();
+    // magicGrid.listen();
 </script>
 {% endblock content %}
 
