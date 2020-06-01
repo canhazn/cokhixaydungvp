@@ -165,7 +165,7 @@ if not DEBUG:
         <AllowedMethod>GET</AllowedMethod>
         <AllowedMethod>POST</AllowedMethod>
         <AllowedMethod>PUT</AllowedMethod>
-        <AllowedHeader>*</AllowedHeader>
+        <AllowedHeader>Content-*</AllowedHeader>
     </CORSRule>
     </CORSConfiguration>
     '''
