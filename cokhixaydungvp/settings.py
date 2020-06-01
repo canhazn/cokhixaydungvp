@@ -154,7 +154,7 @@ if not DEBUG:
     AWS_S3_FILE_OVERWRITE = False
     AWS_DEFAULT_ACL = None
     DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-    STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+    # STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
 
 
@@ -166,7 +166,7 @@ if not DEBUG:
         <AllowedMethod>GET</AllowedMethod>
         <AllowedMethod>POST</AllowedMethod>
         <AllowedMethod>PUT</AllowedMethod>
-        <AllowedHeader>Content-*</AllowedHeader>
+        <AllowedHeader>*</AllowedHeader>
     </CORSRule>
     </CORSConfiguration>
     '''
