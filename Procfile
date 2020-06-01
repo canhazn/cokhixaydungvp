@@ -1,2 +1,2 @@
-web: gunicorn blogchancuu.wsgi --log-file -
+web: gunicorn cokhixaydungvp.wsgi --log-file -
 
