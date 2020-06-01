@@ -34,18 +34,17 @@
 </head>
 
 <body>
-    <div class="wrap">
-        <nav class="navbar navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="{% url 'home' %}">Cơ khí xây dựng Vĩnh Phúc
-            </a>
-
-            <button class="navbar-toggler" style="border: none !important;" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" data-toggle="collapse" data-target="#navbarNavDropdown">Cơ khí xây dựng Vĩnh Phúc</a>
+            <button class="navbar-toggler" style="border: none !important;" type="button" data-toggle="collapse"
+                data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'service_list' %}">Dịch vụ</a>
                     </li>
@@ -57,16 +56,19 @@
                     </li> -->
                 </ul>
             </div>
-        </nav>
+        </div>
+    </nav>
 
-        <hr style="margin: 0;">
+    <div class="container">
+        {% block content %}
+        <!-- Content Goes here -->
+        {% endblock content %}
     </div>
-    {% block content %}
-    <!-- Content Goes here -->
-    {% endblock content %}
+
     <!-- Footer -->
     <footer class="py-3 bg-grey">
         <p class="m-0 text-dark text-center ">Copyright &copy; Cơ khí xây dựng Vĩnh Phúc</p>
+        <p class="m-0 text-dark text-center ">Hotline: <a href="tel:0971925982"> 097 1925982</a></p>
     </footer>
 </body>
 
