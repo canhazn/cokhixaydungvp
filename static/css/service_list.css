@@ -1,14 +1,11 @@
 .service {
-    background-color: white;
-    padding: 20px;
-    margin: 20px 15px;    
+    background-color: white;    
     cursor: pointer;
 }
-.service:hover {
-    border: 1px solid #9ea3a8;
-}
-.service:hover > h2 {
+
+.service:hover h2 {
     text-decoration: underline;
+    text-decoration-color: white;
 }
 
 .service h2 {

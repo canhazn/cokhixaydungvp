@@ -6,12 +6,13 @@
 {% block content %}
 <script src="https://unpkg.com/magic-grid@3.1.2/dist/magic-grid.min.js"></script>
 <div class="row">
-    <div class="leftcolumn container-service">
-
-        <div class="row" style="margin:0">
+    <div class="col-md-9 pt-3">
+        <div class="row">
             {% for service in services %}
-            <div class="col-lg-5 col-md-6 mb-4 bg-warning text-muted card service">
-                <h2 href="#">{{service.title}}</h2>
+            <div class="col-lg-5 col-md-6 mb-4 bg-warning text-muted service">
+                <div class="p-2 bg-primary text-white">
+                    <h2 href="#">{{service.title}}</h2>
+                </div>
                 <div class="thumbnail">
                     {% if service.thumbnail  %}
                         <img src="{{ service.thumbnail.url }}" alt="" srcset="">
@@ -23,7 +24,7 @@
             {% endfor %}       
         </div>     
     </div>
-    <div class="rightcolumn">
+    <div class="col-md-3 pt-3">
         <div class="card bg-warning text-muted">
             <h2>Về chúng tôi</h2>
             <div class="fakeimg" style="height:100px;">Ảnh minh họa</div>
