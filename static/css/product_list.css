@@ -5,12 +5,6 @@
     width: 350px;
     cursor: pointer;
 }
-.service:hover {
-    border: 1px solid #9ea3a8;
-}
-.service:hover > h2 {
-    text-decoration: underline;
-}
 
 .service h2 {
     font-size: 23px;
