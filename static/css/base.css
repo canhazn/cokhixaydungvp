@@ -2,8 +2,7 @@
     --main-bg-color: #ffc107;
 }
 
-body {
-    padding-top: 56px;
+body {    
     background-color: var(--main-bg-color) !important;
 }
 
